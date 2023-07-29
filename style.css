@@ -1,0 +1,135 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+    margin: 0px;
+}
+.parent{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chanel-box{
+    width: 230px;
+    height: 348px;
+    transform: translate(0%,14.5%);
+    /* object-fit: contain; */
+}
+.chanel{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: contain;
+    display: flex;
+}
+.chanel2{
+    display: none;
+}
+.words{
+    width: 230px;
+    height: 308px;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+    /* position: relative;
+    top: 52px; */
+    object-fit: contain;
+    transform: translate(0,15%);
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -15px;
+    
+}
+
+.carting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    position: relative;
+    top: -25px;
+}
+.carting:hover{
+    background-color: var(--Very-dark-blue);
+}
+.perfume{
+    letter-spacing: 5px;
+    ;
+}
+p{
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    
+}
+.four{
+    color: var(--Dark-cyan);
+}
+span{
+    color: var(--White);
+    font-size: 16px;
+}
+.six{
+    font-size: 14px;
+    position: relative;
+    left: -50px;
+    color: var(--Dark-grayish-blue);
+}
+
+@media(max-width:425px){
+    .parent{
+        flex-direction: column;
+    }
+    .chanel-box{
+        /* width: 100%;
+        height: 100%; */
+        width: 270px;
+        height: auto;
+        transform: translate(0%,56%);
+    }
+    .chanel{
+        display: none;
+    }
+     .chanel2{
+        display: flex;
+        width: 100%;
+        /* height: auto; */
+        object-fit: contain;
+        border-radius: 15px 15px 0px 0px;
+        
+     }
+     .words{
+        flex-direction: column;
+        object-fit: contain;
+        border-radius: 0px 0px 15px 15px;
+        position: relative;
+        top: 52px;
+     }
+}
